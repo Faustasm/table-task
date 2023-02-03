@@ -12,27 +12,32 @@ def test_wrong_data_type_in_load_function():
     with pytest.raises(NotImplementedError):
         load_entity(1, 2, 3)
 
+
 def test_database_type_assignment_in_load_function():
-    entity = load_entity('db name', 'db title', 'database')
+    entity = load_entity("db name", "db title", "database")
     assert isinstance(entity, Database)
 
+
 def test_table_type_assignment_in_load_function():
-    entity = load_entity('table name', 'table title', 'table')
+    entity = load_entity("table name", "table title", "table")
     assert isinstance(entity, Table)
 
+
 def test_datatype_type_assignment_in_load_function():
-    entity = load_entity('integer')
+    entity = load_entity("integer")
     assert isinstance(entity, Integer)
-    entity = load_entity('string')
+    entity = load_entity("string")
     assert isinstance(entity, String)
 
+
 def test_column_type_assignment_in_load_function():
-    data_type = load_entity('integer')
-    entity = load_entity('column name', 'column type', data_type)
+    data_type = load_entity("integer")
+    entity = load_entity("column name", "column type", data_type)
     assert isinstance(entity, Column)
 
+
 def test_trailing_and_leading_whitespace_removal():
-    table_data = read_table_data('table.txt')
+    table_data = read_table_data("table.txt")
     for header_column in table_data[0]:
         assert header_column.strip() == header_column
     for entity in table_data[1:]:

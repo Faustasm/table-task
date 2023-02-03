@@ -31,6 +31,7 @@ def read_table_data(file_name):
 
     return table_data
 
+
 if __name__ == "__main__":
     file_name = sys.argv[1]
     table_data = read_table_data(file_name)
