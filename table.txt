@@ -1,0 +1,23 @@
+database | table | column | type    | title
+
+DB                        |         | Database name
+
+         | TBL            |         | Table name
+
+         |       | COL1   | integer | Column 1
+
+         |       | COL2   | string  | Column 2
+DB2                        |         | Database name
+
+         | TBL            |         | Table name
+
+         |       | COL111   | integer | Column 1
+
+         |       | COL2   | string  | Column 2
+DB321312                        |         | Database name
+
+         | TBL            |         | Table namefsd
+
+         |       | COL13123123   | integer | Column 1
+
+         |       | COL2   | string  | Column 2
